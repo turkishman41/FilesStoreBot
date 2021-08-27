@@ -1,4 +1,4 @@
-# PyroFilesStoreBot
+# Infinity FilesStoreBot
 This is Telegram Parmanent Files Store Bot by [@senuinfinity](https://github.com/SenuGamerBoy/FilesStoreBot).
 
 * **Language:** [Python3](https://www.python.org)
@@ -10,9 +10,6 @@ This is Telegram Parmanent Files Store Bot by [@senuinfinity](https://github.com
 - You can also Broadcast anythings via this Bot.
 - You can also Do Force Sub to a Channel to allow access the Bot.
 - Save Multiple Files in Same Link. (Batch)
-
-### Demo Bot:
-<a href="https://t.me/SuperFilesStoreBot"><img src="https://img.shields.io/badge/Demo-Telegram%20Bot-blue.svg?logo=telegram"></a>
 
 ## Configs:
 - `API_ID` - Get this from [@TeleORG_Bot](https://t.me/TeleORG_Bot)
@@ -37,9 +34,6 @@ This is Telegram Parmanent Files Store Bot by [@senuinfinity](https://github.com
          - Put all banned user IDs & Separate with space.
 - `BANNED_CHAT_IDS` - All Banned Channel IDs *(Optional)*
 	- Put all banned channel IDs & Separate with space.
-
-### Video Tutorial:
-[![YouTube](https://img.shields.io/badge/YouTube-Video%20Tutorial-red?logo=youtube)](https://youtu.be/hHu2RaePhwI)
 
 ### Deploy Now:
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/SenuGamerBoy/FilesStoreBot)

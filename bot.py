@@ -336,7 +336,7 @@ async def button(bot: Client, cmd: CallbackQuery):
                 user = await bot.get_chat_member(int(Config.UPDATES_CHANNEL), cmd.message.chat.id)
                 if user.status == "kicked":
                     await cmd.message.edit(
-                        text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/senuinfinitygroup).",
+                        text="Boss සමාවෙන්න ඔයාට මාව use කරන්න බැහැ  😥. Contact my [Support Group](https://t.me/senuinfinitygroup).",
                         parse_mode="markdown",
                         disable_web_page_preview=True
                     )
@@ -344,8 +344,8 @@ async def button(bot: Client, cmd: CallbackQuery):
             except UserNotParticipant:
                 invite_link = await bot.create_chat_invite_link(int(Config.UPDATES_CHANNEL))
                 await cmd.message.edit(
-                    text="**You Still Didn't Join ☹️, Please Join My Updates Channel to use this Bot!**\n\n"
-                         "Due to Overload, Only Channel Subscribers can use the Bot!",
+                    text="**සමාවෙන්න ඔයා මගේ Channnel එකට join වෙලා නැහැ ☹️, ඔයා අපේ channel එකට join උනොත් මේ bot use කරන්න පුලුවන්!**\n\n"
+                         "මේ bot use කරන්න පුළුවන් අපේ telegram channel එකට join උන අයට විතරයි !",
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
@@ -361,7 +361,7 @@ async def button(bot: Client, cmd: CallbackQuery):
                 return
             except Exception:
                 await cmd.message.edit(
-                    text="Something went Wrong. Contact my [Support Group](https://t.me/senuinfinitygroup).",
+                    text="මොකක් හරි ප්‍රශ්නයක් . මගේ support group එකට කියල බලන්න [Support Group](https://t.me/senuinfinitygroup).",
                     parse_mode="markdown",
                     disable_web_page_preview=True
                 )
@@ -387,14 +387,14 @@ async def button(bot: Client, cmd: CallbackQuery):
     elif cb_data.startswith("ban_user_"):
         user_id = cb_data.split("_", 2)[-1]
         if Config.UPDATES_CHANNEL is None:
-            await cmd.answer("Sorry Sir, You didn't Set any Updates Channel!", show_alert=True)
+            await cmd.answer("Sir සමාවෙන්න, You didn't Set any Updates Channel!", show_alert=True)
             return
         if not int(cmd.from_user.id) == Config.BOT_OWNER:
-            await cmd.answer("You are not allowed to do that!", show_alert=True)
+            await cmd.answer("ඔයාට මේවා කරන්න අයිතියක් නැහැ !", show_alert=True)
             return
         try:
             await bot.kick_chat_member(chat_id=int(Config.UPDATES_CHANNEL), user_id=int(user_id))
-            await cmd.answer("User Banned from Updates Channel!", show_alert=True)
+            await cmd.answer("සමාවෙන්න ඔයාව update channel එකෙන් ban කරලා !", show_alert=True)
         except Exception as e:
             await cmd.answer(f"Can't Ban Him!\n\nError: {e}", show_alert=True)
 

@@ -19,29 +19,29 @@ class Config(object):
 	BANNED_CHAT_IDS = list(set(int(x) for x in os.environ.get("BANNED_CHAT_IDS", "-1001362659779 -1001255795497").split()))
 	OTHER_USERS_CAN_SAVE_FILE = bool(os.environ.get("OTHER_USERS_CAN_SAVE_FILE", True))
 	ABOUT_BOT_TEXT = f"""
-This is Permanent Files Store Bot!
-Send me any file I will save it in my Database. Also works for channel. Add me to channel as Admin with Edit Permission, I will add Save Uploaded File in Channel & add Sharable Button Link.
+මම Permanent Files Store Bot 🤖 කෙනෙක්!
+මට ඕනේ files එවන්න මන් ඒවා මගේ database එකට දා ගන්නම් 😏. Also works for channel. Add me to channel as Admin with Edit Permission, I will add Save Uploaded File in Channel & add Sharable Button Link.
 
-🤖 **My Name:** [Files Store Bot](https://t.me/{BOT_USERNAME})
+🤖 **මගේ නම:** [Files Store Bot](https://t.me/{BOT_USERNAME})
 
-📝 **Language:** [Python3](https://www.python.org)
+📝 **මාව හැදුවේ :** [Python3](https://www.python.org)
 
 📚 **Library:** [Pyrogram](https://docs.pyrogram.org)
 
-📡 **Hosted on:** [Heroku](https://heroku.com)
+📡 **මන් ජිවත් වෙන්නේ Heroku server එකේ:** [Heroku](https://heroku.com)
 
-🧑🏻‍💻 **Developer:** @SenuGamerBoy
+🧑🏻‍💻 **මාව හැදුවේ නම කියන්න අකමැති කෙනෙක්:** @senuinfinity
 
-👥 **Support Group:** [Linux Repositories](https://t.me/senuinfinitygroup)
+👥 **උදව් ඕනෙද මේ group එකෙන් උදව් ගන්න:** [Senu Infinity Support](https://t.me/senuinfinitygroup)
 
-📢 **Updates Channel:** [Discovery Projects](https://t.me/senuinfinity)
+📢 **මගේ update channel එක:** [Senu Infinity](https://t.me/senuinfinity)
 """
 	ABOUT_DEV_TEXT = f"""
-🧑🏻‍💻 **Developer:** @AbirHasan2005
+🧑🏻‍💻 **Developer:** @senuinfinity
 
-Developer is Super Noob. Just Learning from Official Docs. Please Donate the developer for Keeping the Service Alive.
+මාව හදපු කෙනා තාම මන් ඉස්කෝලේ යනවා . පුලුවන්නම් Donate කරාන්න මේ දේවල් පවත්වාගෙන යන්න.
 
-Also remember that developer will Delete Adult Contents from Database. So better don't Store Those Kind of Things.
+📌ඔන්න කිව්වා මගේ database එකට නරක ඒවා දැම්මොත් එවෙලේම remove කරනවා
 
 [Donate Now](Cooming Soon) (PayPal)
 """

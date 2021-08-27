@@ -8,7 +8,7 @@
         "bot"
     ],
     "repository": "https://github.com/SenuGamerBoy/FilesStoreBot",
-    "website": "https://telegram.dog/SenuGamerBoy",
+    "website": "https://github.com/SenuGamerBoy",
     "success_url": "https://t.me/senuinfinity",
     "env": {
         "API_ID": {
@@ -37,7 +37,7 @@
             "required": false
         },
         "LOG_CHANNEL": {
-            "description": "Logs Channel ID for some Tracking XD. Example: -100123456789"
+            "description": "Logs Channel ID for some Tracking XD ( Create New Telegram channel and add rose bot type /id. Example: -100123456789"
         },
         "BANNED_USERS": {
             "description": "Banned unwanted members",
