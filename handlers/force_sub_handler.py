@@ -29,8 +29,7 @@ async def handle_force_sub(bot: Client, cmd: Message):
             return 200
         await bot.send_message(
             chat_id=cmd.from_user.id,
-            text=""**Sorry ඔයා මගේ Channnel එකට join වෙලා නැහැ ☹️, ඔයා අපේ channel එකට join උනොත් මේ bot use කරන්න පුලුවන්!**\n\n"
-                 "මේ bot use කරන්න පුළුවන් අපේ telegram channel එකට join උන අයට විතරයි !",
+            text=""Join Our Channel To Use Me ❗",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
@@ -47,7 +46,7 @@ async def handle_force_sub(bot: Client, cmd: Message):
     except Exception:
         await bot.send_message(
             chat_id=cmd.from_user.id,
-            text="Something went Wrong. Contact my [Support Group](https://t.me/senuinfinitygroup).",
+            text="Something went Wrong. Contact my [Support Group](https://t.me/Groupdc).",
             parse_mode="markdown",
             disable_web_page_preview=True
         )
